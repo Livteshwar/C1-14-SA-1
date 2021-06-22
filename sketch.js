@@ -1,12 +1,11 @@
-var ball = {
-  x:20,
-  y:30,
-  r:30,
-  xspeed:0,
-  yspeed:0, 
-  color:["blue","red","green","purple"],
- 
-};
+var ball={
+x:60,
+y:40,
+radius:20,
+color:["blue","pink","green","red"],
+x_speed:0,
+y_speed:0
+}
 
 function setup() 
 {
@@ -17,10 +16,11 @@ function setup()
 function draw() 
 {
   background(220);
-  circle(ball.x,ball.y,ball.r);
-  fill(ball.color[0]);
-  ball.xspeed = 1;
-  ball.x= ball.x + ball.xspeed;
-    
+  
+  circle(ball.x,ball.y,ball.radius);
+  fill(ball.color[2])
+  ball.x_speed =1
+  ball.x=ball.x + ball.x_speed
+  
 }
 
